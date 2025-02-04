@@ -70,10 +70,16 @@ GET	/api/bank/transactions	//Get transaction history
 Each request must include:
 
 Headers → Authorization: Bearer <your_token> (except for login/register)
+
+
 Body → JSON data (for POST requests)
+
+
 **📌 1. Register a User**
 POST /api/auth/register
+
 Headers:None
+
 Body (JSON):
 ```bash
 {
@@ -83,8 +89,11 @@ Body (JSON):
 }
 ```
 **📌 2. Login User**
+
 Endpoint:POST /api/auth/login
+
 Headers:None
+
 Body (JSON):
 ```bash
 {
@@ -93,12 +102,17 @@ Body (JSON):
 }
 ```
 **📌 3. Get User Balance**
+
 Endpoint:GET /api/balance
+
 Headers: Authorization: Bearer your_jwt_token
 
-**📌 4. Deposit Money*
+**📌 4. Deposit Money**
+
 Endpoint:POST /api/deposit
+
 Headers: Authorization: Bearer your_jwt_token
+
 Body (JSON):
 ```bash
 {
@@ -107,8 +121,11 @@ Body (JSON):
 ```
 
 **📌 5. Withdraw Money**
+
 Endpoint:POST /api/withdraw
+
 Headers: Authorization: Bearer your_jwt_token
+
 Body (JSON):
 ```bash
 {
@@ -116,8 +133,11 @@ Body (JSON):
 }
 ```
 **📌 6. Transfer Money**
+
 Endpoint:POST /api/transfer
+
 Headers: Authorization: Bearer your_jwt_token
+
 Body (JSON):
 ```bash
 {
@@ -127,8 +147,11 @@ Body (JSON):
 ```
 
 **📌 7. Get Transaction History**
+
 Endpoint:GET /api/transactions
+
 Headers: Authorization: Bearer your_jwt_token
+
 
 ## 📜 License
 This project is licensed under the MIT License.
