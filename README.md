@@ -40,9 +40,13 @@ cd Banking_Operations_WithNode
 npm install
 ```
 4️⃣ **Set up environment variables**
+
 Create a .env file and add the following:
+
 PORT=5000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_secret_key
 
 5️⃣ **Run the application**
@@ -76,7 +80,8 @@ Body → JSON data (for POST requests)
 
 
 **📌 1. Register a User**
-POST /api/auth/register
+
+Endpoint:POST /api/auth/register
 
 Headers:None
 
